@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ReadyPlayerMe;
+using ReadyPlayerMe.AvatarLoader;
 using System.Linq;
 using UnityEngine.UI;
 

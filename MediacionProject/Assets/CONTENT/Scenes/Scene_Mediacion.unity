@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 942807b25f5f27441bf838d5b184d8b4, type: 2}
 --- !u!1 &8277245
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 36548427}
   - component: {fileID: 36548428}
   m_Layer: 0
-  m_Name: 'SillaHombre (Missing Prefab with guid: 247e5b33a1b1dba43a82e14ad7191756)'
+  m_Name: SillaHombre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -925,14 +925,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36548426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.37473747, z: -0, w: 0.927131}
+  m_LocalPosition: {x: -17.74, y: -0.255, z: 7.951}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 28232222}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -44.016, z: 0}
 --- !u!65 &36548428
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6114,6 +6114,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_Name
       value: SM_Hosp_ChairColchon2_001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15391,6 +15395,10 @@ PrefabInstance:
       value: Wall3Door2 (14)
       objectReference: {fileID: 0}
     - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15405,6 +15413,10 @@ PrefabInstance:
     - target: {fileID: 6696043094607240624, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.869
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718211754269325539, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6718211754269325539, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24192,7 +24204,7 @@ GameObject:
   - component: {fileID: 801864126}
   - component: {fileID: 801864127}
   m_Layer: 0
-  m_Name: 'SillaMujer (Missing Prefab with guid: 247e5b33a1b1dba43a82e14ad7191756)'
+  m_Name: SillaMujer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24206,7 +24218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801864125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -14.593, y: -0.231, z: 7.621}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27337,6 +27349,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_Name
       value: SM_Hosp_ChairColchon2_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34257,6 +34273,10 @@ PrefabInstance:
       value: SM_Hosp_ChairColchon2_001
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -35248,7 +35268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194015210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.94, y: 0, z: -9.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36500,6 +36520,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_Name
       value: SM_Hosp_ChairColchon2_001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6f4eae14a6b4c456ca13aabfa5ec6a9e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42646,6 +42670,10 @@ PrefabInstance:
     - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_Name
       value: Wall3Door2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50001,6 +50029,10 @@ PrefabInstance:
     - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_Name
       value: Wall3Door2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3715679651223899005, guid: 514b8742ffce846f0ba23310f4bfa312, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -60802,7 +60834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042066085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.463, y: 0.255, z: -17.071}
+  m_LocalPosition: {x: 22.3, y: 0.255, z: -8.163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -63339,7 +63371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310762203687519905, guid: 42399d30f2db30f4faa6d3178a73b3c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.872999
+      value: -10.874
       objectReference: {fileID: 0}
     - target: {fileID: 3310762203687519905, guid: 42399d30f2db30f4faa6d3178a73b3c8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -63347,7 +63379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310762203687519905, guid: 42399d30f2db30f4faa6d3178a73b3c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.530998
+      value: 18.725
       objectReference: {fileID: 0}
     - target: {fileID: 3310762203687519905, guid: 42399d30f2db30f4faa6d3178a73b3c8, type: 3}
       propertyPath: m_LocalRotation.w

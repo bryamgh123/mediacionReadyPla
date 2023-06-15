@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using ReadyPlayerMe;
+using ReadyPlayerMe.AvatarLoader;
 
 
 public class ControllerApp : MonoBehaviour
@@ -75,7 +75,7 @@ public class ControllerApp : MonoBehaviour
         Direccion.SetActive(false);
         infoL.SetActive(true);
         infoR.SetActive(true);
-        seleccionarCaso();
+        //seleccionarCaso();
     }
     //con este metodo obtengo los casos y los presento apenas aparese el canvas de seleccion de caso
     public void obtenerCaso()
@@ -127,70 +127,33 @@ public class ControllerApp : MonoBehaviour
         }
     }
     // con este boton selecciona el caso e inicia el evento con los sigientes metodos
-    //     public void seleccionarCaso()
-    //     {
-    //         CanvasSelCaso.SetActive(false);
-    //         hoja.SetActive(false);
-    //         idCasoFinal = idCaso;
-    //         StartCoroutine(uime());
-    //         Direccion.SetActive(true);
-    //     }
-    //     // este metodo inicia la rutina y despues de 9 segundos activa el canvas de interaccion
-    //     //este es por ahora despues cambiara para que sea mas interactivo pobria ponerlo en 
-    //     // el navvar para que cuando llege lo active pero va tarer problemas talves con uina bool 
-    //     //ya se vera como se hace
-    //     //
-    //     //
-    //     //
-    //     //
-    //    IEnumerator uime()
-    //     {
-    //         IniciarRutina();
-    //         yield return new WaitForSeconds(10);
-    //         UiMediador.SetActive(true);
-    //     }
-
-
-
     public void seleccionarCaso()
     {
-        if (CanvasSelCaso != null && hoja != null && Direccion != null && UiMediador != null)
-        {
-            CanvasSelCaso.SetActive(false);
-            hoja.SetActive(false);
-            idCasoFinal = idCaso;
-            StartCoroutine(uime());
-            //cambios
-        // IniciarRutina();
-            Direccion.SetActive(true);
-        }
-        else
-        {
-            Debug.LogError("un objeto no esta asignado.");
-        }
+        CanvasSelCaso.SetActive(false);
+        hoja.SetActive(false);
+        idCasoFinal = idCaso;
+        StartCoroutine(uime());
+        Direccion.SetActive(true);
     }
-
-    IEnumerator uime()
+    // este metodo inicia la rutina y despues de 9 segundos activa el canvas de interaccion
+    //este es por ahora despues cambiara para que sea mas interactivo pobria ponerlo en 
+    // el navvar para que cuando llege lo active pero va tarer problemas talves con uina bool 
+    //ya se vera como se hace
+    //
+    //
+    //
+    //
+   IEnumerator uime()
     {
         IniciarRutina();
         yield return new WaitForSeconds(10);
-        if (UiMediador != null)
-        {
-            UiMediador.SetActive(true);
-        }
-        else
-        {
-            Debug.LogError("UiMediador no esta asignado.");
-        }
+        UiMediador.SetActive(true);
     }
-
-
-
 
     //este metodo llama a otros metodos de esta clase y de otras para usar los dialogos
     public void IniciarRutina()
     {
-        //ObtenerAvatares();
+        ObtenerAvatares();
         ObtenerParametrosParaControllerApp();
         navAvatar1.ParametrosNavvar();
         navAvatar2.ParametrosNavvar();

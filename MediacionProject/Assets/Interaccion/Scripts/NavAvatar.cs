@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using static ReadyPlayerMe.ExtensionMethods;
+//por ver
+using ReadyPlayerMe.AvatarLoader;
 
 public class NavAvatar : MonoBehaviour
 {
