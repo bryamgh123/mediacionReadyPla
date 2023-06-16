@@ -1,54 +1,133 @@
-// using System.Collections;
-// using System.Collections.Generic;
-// using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-// public class PuertaControlador : MonoBehaviour
-// {
+public class PuertaControlador : MonoBehaviour
+{
+[Header("Sonidos puertas")]
+    // public GameObject botonAbrir;
+    // public GameObject botonCerrar;
+    // public GameObject puerta;
 
-//     [SerializeField]
-//     private float rotationSpeed = 50f;
+    // public float tiempoAbrir = 1f;
+    // public float tiempoCerrar = 1f;
 
-//     private Vector3 defaultRotation;
-//     private OVRGrabber handGrabbing;
+    // public float maximoAbrir = 90f;
+    // public float maximoCerrar = 0f;
 
-//     private void Start()
-//     {
-//         defaultRotation = transform.eulerAngles;
-//     }
+    // private bool puertaAbierta = false;
 
-//     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
-//     {
-//         base.GrabBegin(hand, grabPoint);
-//         handGrabbing = hand;
-//     }
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         if (!puertaAbierta)
+    //         {
+    //             botonAbrir.SetActive(true);
+    //         }
+    //     }
+    // }
 
-//     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
-//     {
-//         base.GrabEnd(Vector3.zero, Vector3.zero);
-//         handGrabbing = null;
-//     }
+    // private void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         botonAbrir.SetActive(false);
+    //         botonCerrar.SetActive(false);
+    //         CancelInvoke("CerrarPuerta");
+    //     }
+    // }
 
-//     private void Update()
-//     {
-//         if (isGrabbed && handGrabbing)
-//         {
-//             RotateDoor();
-//         }
-//     }
+    // public void AbrirPuerta()
+    // {
+    //     if (!puertaAbierta)
+    //     {
+    //         puertaAbierta = true;
+    //         puerta.transform.rotation = Quaternion.Euler(0f, maximoAbrir, 0f);
+    //         botonAbrir.SetActive(false);
+    //         botonCerrar.SetActive(true);
+    //         Invoke("CerrarPuerta", tiempoAbrir);
+    //     }
+    // }
 
-//     private void RotateDoor()
-//     {
-//         float rotationAmount = handGrabbing.transform.eulerAngles.z - transform.eulerAngles.z;
-//         rotationAmount *= rotationSpeed * Time.deltaTime;
+    // public void CerrarPuerta()
+    // {
+    //     if (puertaAbierta)
+    //     {
+    //         puertaAbierta = false;
+    //         puerta.transform.rotation = Quaternion.Euler(0f, maximoCerrar, 0f);
+    //         botonCerrar.SetActive(false);
+    //         botonAbrir.SetActive(true);
+    //         Invoke("AbrirPuerta", tiempoCerrar);
+    //     }
+    // }
 
-//         // Aquí controlas hasta qué punto se puede abrir la puerta.
-//         float rotationZ = Mathf.Clamp(transform.eulerAngles.z + rotationAmount, defaultRotation.z, defaultRotation.z + 90f);
+    public GameObject puerta;
 
-//         transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, rotationZ);
-//     }
+    public float tiempoAbrir = 1f;
+    public float tiempoCerrar = 1f;
 
+    public float maximoAbrir = 90f;
+    public float maximoCerrar = 0f;
 
+    private bool puertaAbierta = false;
+    private bool jugadorEnTrigger = false;
 
+    private void Update()
+    {
+        if (jugadorEnTrigger && OVRInput.GetDown(OVRInput.Button.One))
+        {
+            if (!puertaAbierta)
+            {
+                AbrirPuerta();
+                Debug.Log("Abrir Puerta entro");
+            }
+            else
+            {
+                CerrarPuerta();
+                Debug.Log("Cerrar puerta entro");
+            }
+        }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            jugadorEnTrigger = true;
+            Debug.Log("jugadorEnTrigger Verdadero");
+        }
+    }
 
-// }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            jugadorEnTrigger = false;
+            Debug.Log("jugadorEnTrigger Falso");
+        }
+    }
+
+    private void AbrirPuerta()
+    {
+        if (!puertaAbierta)
+        {
+            puertaAbierta = true;
+            puerta.transform.rotation = Quaternion.Euler(0f, maximoAbrir, 0f);
+            Debug.Log(" puerta rotacion" + puerta);
+            //Invoke("CerrarPuerta", tiempoAbrir);
+        }
+    }
+
+    private void CerrarPuerta()
+    {
+        if (puertaAbierta)
+        {
+            puertaAbierta = false;
+            puerta.transform.rotation = Quaternion.Euler(0f, maximoCerrar, 0f);
+            Debug.Log(" puerta rotacion" + puerta);
+            //Invoke("AbrirPuerta", tiempoCerrar);
+        }
+    }
+
+}
