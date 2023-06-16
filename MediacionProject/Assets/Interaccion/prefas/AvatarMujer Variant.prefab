@@ -53,8 +53,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4921839214077242706, guid: d67d5c39973a3484683b060d1515f2e1, type: 3}
       propertyPath: m_Name
-      value: AvatarMujer
+      value: AvatarMujer Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6543839192855893734, guid: d67d5c39973a3484683b060d1515f2e1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bd0f7b3f6ee512348826e4d3a3a996ed, type: 2}
     - target: {fileID: 9178237376216688194, guid: d67d5c39973a3484683b060d1515f2e1, type: 3}
       propertyPath: AudioSource
       value: 
