@@ -6,8 +6,8 @@ public class PuertasAbrir : MonoBehaviour
     public GameObject puerta2;
     public float tiempoAbrir = 1f;
     public float tiempoCerrar = 1f;
-    public float maximoAbrir = 90f;
-    public float maximoCerrar = 0f;
+    public float maximoAbrir;
+    public float maximoCerrar;
 
     private bool puertaAbierta = false;
     private bool jugadorEnTrigger = false;
