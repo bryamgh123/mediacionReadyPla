@@ -4,6 +4,8 @@ public class PuertasAbrir : MonoBehaviour
 {
     public Transform puerta;
     public GameObject puerta2;
+    public GameObject PuertaAbrir;
+    public GameObject PuertaCerrar;
     public float tiempoAbrir = 1f;
     public float tiempoCerrar = 1f;
     public float maximoAbrir;
@@ -12,17 +14,29 @@ public class PuertasAbrir : MonoBehaviour
     private bool puertaAbierta = false;
     private bool jugadorEnTrigger = false;
 
+
+
+private void Start()
+{
+        PuertaAbrir.SetActive(false);
+        PuertaCerrar.SetActive(false);
+    
+}
     private void Update()
     {
         if (jugadorEnTrigger && OVRInput.GetDown(OVRInput.Button.One))
         {
             if (!puertaAbierta)
             {
+                PuertaAbrir.SetActive(true);
+                PuertaCerrar.SetActive(false);
                 AbrirPuerta();
                 Debug.Log("Abrir Puerta");
             }
             else
             {
+                PuertaAbrir.SetActive(false);
+                PuertaCerrar.SetActive(true);
                 CerrarPuerta();
                 Debug.Log("Cerrar Puerta");
             }
@@ -43,6 +57,8 @@ public class PuertasAbrir : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             jugadorEnTrigger = false;
+            PuertaAbrir.SetActive(false);
+            PuertaCerrar.SetActive(false);
             Debug.Log("jugadorEnTrigger Falso");
         }
     }

@@ -3960,6 +3960,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 249520846}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 15
@@ -4803,6 +4805,86 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173738462}
+  m_CullTransparentMesh: 1
+--- !u!1 &174938072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 174938073}
+  - component: {fileID: 174938075}
+  - component: {fileID: 174938074}
+  m_Layer: 5
+  m_Name: PuertaAbrir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &174938073
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174938072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1563556250}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -333, y: 7}
+  m_SizeDelta: {x: 1007.9, y: 311.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &174938074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174938072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.98490566, b: 0.98490566, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 119
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 133
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Preciona "A" para abrir.
+--- !u!222 &174938075
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174938072}
   m_CullTransparentMesh: 1
 --- !u!1001 &175274849
 PrefabInstance:
@@ -5706,6 +5788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 184944041}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
@@ -20283,6 +20367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 1565880926}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
@@ -23590,6 +23676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 1427134955}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: -90
@@ -28942,6 +29030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 1133481980}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
@@ -29519,6 +29609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 1728024201}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: -120
@@ -34605,6 +34697,11 @@ BoxCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 468bd150c10be41c687770dacccfd862, type: 3}
   m_PrefabInstance: {fileID: 1147278133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1151189104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4480837372127039727, guid: 8966e7f8aa654e448a8b67ae4e901636, type: 3}
+  m_PrefabInstance: {fileID: 1652239751}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1154234533
 PrefabInstance:
@@ -44057,6 +44154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 168885051}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
@@ -44648,6 +44747,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 1266991549}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
@@ -46209,6 +46310,108 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.10489102, z: 3}
   m_Center: {x: -1.5, y: -0.05244551, z: 1.5}
+--- !u!1 &1563556249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563556250}
+  - component: {fileID: 1563556253}
+  - component: {fileID: 1563556252}
+  - component: {fileID: 1563556251}
+  m_Layer: 5
+  m_Name: InfoPuerta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1563556250
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563556249}
+  m_LocalRotation: {x: 0.41421118, y: 2.2737368e-13, z: -2.2737368e-13, w: 0.9101808}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.0001, y: 0.00009999999, z: 0.00009999999}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 174938073}
+  - {fileID: 1998764684}
+  m_Father: {fileID: 1151189104}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 48.939, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0483, y: 0}
+  m_SizeDelta: {x: 4150.202, y: 2758.2188}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1563556251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563556249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1563556252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563556249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!223 &1563556253
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563556249}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!4 &1563999953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f79e3e16c87304409a1d6bf55da2146e, type: 3}
@@ -48787,6 +48990,14 @@ PrefabInstance:
     - target: {fileID: 4479717944436552336, guid: 8966e7f8aa654e448a8b67ae4e901636, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480837370450433335, guid: 8966e7f8aa654e448a8b67ae4e901636, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480837370450433335, guid: 8966e7f8aa654e448a8b67ae4e901636, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4480837372240787385, guid: 8966e7f8aa654e448a8b67ae4e901636, type: 3}
       propertyPath: m_RootOrder
@@ -55651,6 +55862,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 594408006}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
@@ -60561,6 +60774,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fbed81dd684d44e5b8c572e8f36224cf, type: 3}
   m_PrefabInstance: {fileID: 1998369865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1998764683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998764684}
+  - component: {fileID: 1998764686}
+  - component: {fileID: 1998764685}
+  m_Layer: 5
+  m_Name: PuertaCerrar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1998764684
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998764683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1563556250}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -333, y: 7}
+  m_SizeDelta: {x: 1007.9, y: 311.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1998764685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998764683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.98490566, b: 0.98490566, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 119
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 133
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Preciona "A" para cerrar.
+--- !u!222 &1998764686
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998764683}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2005448059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61506,6 +61799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 1219792239}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 180
@@ -63493,6 +63788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puerta: {fileID: 2136115707}
   puerta2: {fileID: 0}
+  PuertaAbrir: {fileID: 174938072}
+  PuertaCerrar: {fileID: 1998764683}
   tiempoAbrir: 1
   tiempoCerrar: 1
   maximoAbrir: 90
