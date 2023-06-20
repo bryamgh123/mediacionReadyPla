@@ -16,27 +16,27 @@ public class PuertasAbrir : MonoBehaviour
 
 
 
-private void Start()
-{
+    private void Start()
+    {
         PuertaAbrir.SetActive(false);
         PuertaCerrar.SetActive(false);
-    
-}
+
+    }
     private void Update()
     {
         if (jugadorEnTrigger && OVRInput.GetDown(OVRInput.Button.One))
         {
             if (!puertaAbierta)
             {
-                PuertaAbrir.SetActive(true);
-                PuertaCerrar.SetActive(false);
+                PuertaAbrir.SetActive(false);
+                PuertaCerrar.SetActive(true);
                 AbrirPuerta();
                 Debug.Log("Abrir Puerta");
             }
             else
             {
-                PuertaAbrir.SetActive(false);
-                PuertaCerrar.SetActive(true);
+                PuertaAbrir.SetActive(true);
+                PuertaCerrar.SetActive(false);
                 CerrarPuerta();
                 Debug.Log("Cerrar Puerta");
             }
@@ -48,6 +48,17 @@ private void Start()
         if (other.CompareTag("Player"))
         {
             jugadorEnTrigger = true;
+
+            if (!puertaAbierta)
+            {
+                PuertaAbrir.SetActive(true);
+                PuertaCerrar.SetActive(false);
+            }
+            else if (puertaAbierta)
+            {
+                PuertaAbrir.SetActive(false);
+                PuertaCerrar.SetActive(true);
+            }
             Debug.Log("jugadorEnTrigger Verdadero");
         }
     }
