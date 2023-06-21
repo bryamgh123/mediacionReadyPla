@@ -9,10 +9,12 @@ public class ZonaJuego : MonoBehaviour
     private GameObject EspacioparaAvatar1;
     private GameObject EspacioparaAvatar2;
     public GameObject avatarmediador;
-    
+
     public GameObject Direccion;
 
-
+    [Header("Ui laser")]
+    public GameObject Laser;
+    public GameObject TextoLaser;
     private void Start()
     {
         avatarmediador.SetActive(false);
@@ -21,12 +23,12 @@ public class ZonaJuego : MonoBehaviour
     public void vermediador()
     {
         avatarmediador.SetActive(true);
-         Direccion.SetActive(false);
+        Direccion.SetActive(false);
 
     }
     public void novermediador()
     {
-        avatarmediador.SetActive(false); 
+        avatarmediador.SetActive(false);
         Direccion.SetActive(false);
     }
     private void Update()
@@ -47,6 +49,9 @@ public class ZonaJuego : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Laser.SetActive(true);
+            TextoLaser.SetActive(true);
+
             navAvatar1.PlayerIngreso = true;
             navAvatar2.PlayerIngreso = true;
             novermediador();
@@ -58,6 +63,9 @@ public class ZonaJuego : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Laser.SetActive(false);
+            TextoLaser.SetActive(false);
+
             navAvatar1.PlayerIngreso = false;
             navAvatar2.PlayerIngreso = false;
             vermediador();

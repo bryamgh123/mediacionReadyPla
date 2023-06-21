@@ -7,14 +7,20 @@ public class hojas : MonoBehaviour
     public GameObject CanvasSelCaso;
     public GameObject hoja;
     public GameObject ZonaLuz;
+
+    [Header("Ui laser")]
+    public GameObject Laser;
+    public GameObject TextoLaser;
+
     private bool playerIngresoInter = false;
     public bool PlayerIngresoEn
     {
         get { return playerIngresoInter; }
         set { playerIngresoInter = value; }
     }
+    [Header("Animador")]
     public Animator anime;
-//etse metodo activa cuando el jugador esta dentro de la zona el canvas de caso
+    //etse metodo activa cuando el jugador esta dentro de la zona el canvas de caso
     public void activarInteraccion()
     {
         if (playerIngresoInter)
@@ -34,6 +40,8 @@ public class hojas : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Laser.SetActive(true);
+            TextoLaser.SetActive(true);
             playerIngresoInter = true;
             activarInteraccion();
         }
@@ -43,6 +51,9 @@ public class hojas : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Laser.SetActive(false);
+            TextoLaser.SetActive(false);
+
             playerIngresoInter = false;
             activarInteraccion();
         }
@@ -51,6 +62,9 @@ public class hojas : MonoBehaviour
     {
         hoja.SetActive(true);
         CanvasSelCaso.SetActive(false);
+        
+        Laser.SetActive(false);
+        TextoLaser.SetActive(false);
     }
 }
 

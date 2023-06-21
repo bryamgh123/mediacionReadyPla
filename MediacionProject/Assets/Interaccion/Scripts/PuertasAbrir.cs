@@ -3,7 +3,6 @@ using UnityEngine;
 public class PuertasAbrir : MonoBehaviour
 {
     public Transform puerta;
-    public GameObject puerta2;
     public GameObject PuertaAbrir;
     public GameObject PuertaCerrar;
     public float tiempoAbrir = 1f;
@@ -18,6 +17,8 @@ public class PuertasAbrir : MonoBehaviour
 
     private void Start()
     {
+
+
         PuertaAbrir.SetActive(false);
         PuertaCerrar.SetActive(false);
 
