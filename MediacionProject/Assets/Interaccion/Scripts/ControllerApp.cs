@@ -75,7 +75,7 @@ public class ControllerApp : MonoBehaviour
         Direccion.SetActive(false);
         infoL.SetActive(true);
         infoR.SetActive(true);
-        seleccionarCaso();
+       // seleccionarCaso();
     }
     //con este metodo obtengo los casos y los presento apenas aparese el canvas de seleccion de caso
     public void obtenerCaso()
