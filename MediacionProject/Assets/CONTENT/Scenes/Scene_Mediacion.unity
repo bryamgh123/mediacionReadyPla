@@ -11578,6 +11578,14 @@ PrefabInstance:
       propertyPath: m_controller
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 209645585834991624, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_Text
+      value: Presiona "A" para cerrar.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335563967367350217, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_Text
+      value: Presiona "A" para abrir.
+      objectReference: {fileID: 0}
     - target: {fileID: 1339550040973330167, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_Name
       value: TextoLaser
@@ -11677,6 +11685,10 @@ PrefabInstance:
     - target: {fileID: 3776770775793333474, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_controller
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581723597740947828, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_Text
+      value: "Utiliza este joystick \n         para girar."
       objectReference: {fileID: 0}
     - target: {fileID: 5055096263321571080, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
